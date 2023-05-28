@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+int inprod(int a[], int b[], int i);
 /**
  * 名古屋大学　大学院情報学研究科　2009年度博士前期課程入試問題　情1-2
  *
@@ -9,6 +9,13 @@
  * 変数iに代入される。関数inprodと、それを用いる関数mainからなるプログラム
  * を以下に示す。括弧内に入れるべき式、または式の一部を答えよ。
  */
+
+int main()
+{
+    int a[] = {1, 2, 3}, b[] = {100, 10, 1}, n = 3;
+    printf("%d\n", inprod(a, b, n));
+    return 0;
+}
 
 int inprod(int a[], int b[], int i)
 {
@@ -20,11 +27,4 @@ int inprod(int a[], int b[], int i)
     {
         return 0;
     }
-}
-
-int main()
-{
-    int a[] = {1, 2, 3}, b[] = {100, 10, 1}, n = 3;
-    printf("%d\n", inprod(a, b, n));
-    return 0;
 }

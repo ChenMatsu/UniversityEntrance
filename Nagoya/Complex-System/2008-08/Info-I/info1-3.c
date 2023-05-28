@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * 名古屋大学　大学院情報学研究科　2009年度博士前期課程入試問題　情1-3~5
@@ -48,6 +49,23 @@ int new_prim(int x, int i)
     }
 }
 
+int gpt_prim(int x)
+{
+    if (x < 2)
+        return 0;
+    if (x == 2)
+        return 1;
+    if (x % 2 == 0)
+        return 0;
+    int limit = sqrt(x);
+    for (int i = 3; i <= limit; i += 2)
+    {
+        if (x % i == 0)
+            return 0;
+    }
+    return 1;
+}
+
 /**
  * [5]問[3]のプログラムを利用するための関数mainを作成せよ。この関数では
  *  　キーボードより変数yへ１より大きな整数を読み込む。それを関数primに引
@@ -67,13 +85,7 @@ int main(void)
         scanf("%d", &y);
     }
 
-    if (prim(y))
-    {
-        printf("素数です.\n");
-    }
-    else
-    {
-        printf("素数ではありません.\n");
-    }
-    return 0;
+    if (gpt_prim(y))
+        return printf("素数です.\n");
+    printf("素数ではありません.\n");
 }
