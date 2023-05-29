@@ -11,6 +11,7 @@
  *    整数型変数imaxに代入する。続いて、変数aのimax番目の要素とa[n-1]の値
  * 　　を交換する。下線部に記載するべき式、または式の一部を答えよ。
  */
+
 int maxswap(int a[], int n)
 {
     int i, imax, max;
@@ -38,5 +39,6 @@ int main(void)
         maxswap(a, n - i);
     for (i = 0; i < n; i++)
         printf("%d ", a[i]);
+    printf("\n");
     return 0;
 }

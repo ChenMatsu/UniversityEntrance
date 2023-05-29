@@ -13,7 +13,7 @@
 int main()
 {
     int i, n = 3;
-    double a[] = {1, 2, 3}, b[] = {2, -1, 1}, sa, sb, prod;
+    double a[] = {1, 2, 3}, b[] = {2, -1, 1}, sa = 0.0, sb = 0.0, prod = 0.0;
     for (i = 0; i < n; i++)
     {
         sa += a[i] * a[i];
@@ -21,5 +21,6 @@ int main()
         prod += a[i] * b[i];
     }
     printf("%lf ", acos(prod / (sqrt(sa) * sqrt(sb))));
+    printf("\n");
     return 0;
 }

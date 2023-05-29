@@ -11,8 +11,8 @@ int main()
     int a, b;
     a = 1.5;
     b = 9.7;
-    printf("%d\n", a++);    // 1
-    printf("%d\n", b % a);  // 1
+    printf("%d\n", a++);    // 1 => a will add 1 after printf
+    printf("%d\n", b % a);  // 1 => a is now two
     printf("%d\n", b >> 2); // 2
     return 0;
 }
