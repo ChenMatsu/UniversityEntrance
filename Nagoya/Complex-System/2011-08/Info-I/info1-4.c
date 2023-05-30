@@ -10,6 +10,7 @@ struct exm
 {
     int age;
     char name[100];
+    // char *name; // This should work!
 };
 
 /**

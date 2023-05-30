@@ -15,7 +15,7 @@
 /**
  * @Note 原題意並沒有描述終止的條件 因此直接設0
  *       此外題目傳入陣列大小，但卻直接修正超出陣列大小的元素，個人判定應該是要在傳入時直接減少1作為傳入的大小
-*/
+ */
 int fnc1(int a[], int n, int x)
 {
     if (a[n] == x)
@@ -50,6 +50,7 @@ int main(void)
     int size = (int)sizeof(nums) / sizeof(int);
     print_array(nums, size);
     fnc1(nums, size - 1, (rand() % 9) + 1);
+    printf("%d\n", size);
     print_array(nums, size);
     return 0;
 }

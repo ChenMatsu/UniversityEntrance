@@ -15,10 +15,8 @@ float fnc2(float array[N][N], int n)
 {
     float sum = 0.0;
     for (int i = 0; i < n; i++)
-    {
         for (int j = 0; j < n; j++)
             sum += array[i][j];
-    }
     return sum;
 }
 
