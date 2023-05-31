@@ -17,7 +17,7 @@ int fnc2(int a[], int n, int x)
     {
         if (a[n - 1] != x)
         {
-            return 1 + fnc2(a, n - 1, x);
+            return a[n-1] + fnc2(a, n - 1, x);
         }
         else
         {

@@ -68,5 +68,10 @@ int main(void)
 
     printf("2進数 結果：%d\n", fnc1(128, 2));
     printf("8進数 結果：%d\n", fnc1(65, 8));
+
+    printf("-----\n");
+
+    printf("8進数 結果：%d\n", fnc1(107, 8));
+    printf("8進数 結果：%d\n", fnc1(153, 8));
     return 0;
 }
