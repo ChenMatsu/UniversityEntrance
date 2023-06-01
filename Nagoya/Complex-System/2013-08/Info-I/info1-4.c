@@ -17,8 +17,11 @@
 char *scpy(char *s, char *t)
 {
     int i = 0;
-    while (*t != '\0')
-        *(s++) = *(t++); // both string move to the next char after assigned
+    while (t[i] != '\0')
+    {
+        // *(s++) = *(t++); // both string move to the next char after assigned
+        s[i] = t[i], i++;
+    }
     return s;
 }
 
@@ -39,9 +42,10 @@ int main(void)
     int i, n;
     scpy(c, b); // Copy b to c
     n = slen(c);
-    b++; // b++ means b pointer moves to next char and start with it, then ABC becomes BC 
+    b++; // b++ means b pointer moves to next char and start with it, then ABC becomes BC
+    // printf("%s %lu\n", b, strlen(b));
     for (i = 0; b[i] != '\0'; i++)
-        c[n++] = b[i]; 
+        c[n++] = b[i];
     printf("n = %d\n", n); // 5
     printf("a = %s\n", a); // AB
     printf("c = %s\n", c); // ABCBC

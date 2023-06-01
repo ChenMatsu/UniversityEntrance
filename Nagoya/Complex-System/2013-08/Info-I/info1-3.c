@@ -21,6 +21,19 @@ float fnc2(float a[], float b[], int n)
     }
 }
 
+float fnc2_alternative(float a[], float b[], int n)
+{
+    if (n > 0)
+    {
+        return a[n - 1] * b[n - 1] + fnc2_alternative(a, b, n - 1);
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+
 int main(void)
 {
     int size = 5;
@@ -28,5 +41,7 @@ int main(void)
     float vec_two[] = {5.0, 4.0, 3.0, 2.0, 1.0};
 
     printf("%.2f\n", fnc2(vec_one, vec_two, size));
+
+    printf("%.2f\n", fnc2_alternative(vec_one, vec_two, size));
     return 0;
 }
