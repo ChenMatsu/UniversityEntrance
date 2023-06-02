@@ -21,9 +21,9 @@ int func2(int x, int a[], int n)
     }
     else
     {
-        if (x > a[n - 1])
+        if (x < a[n - 1])
         {
-            return (func2(x, a, n - 1) + 1);
+            return (func2(x, a, n - 1) + a[n - 1]);
         }
         else
         {
