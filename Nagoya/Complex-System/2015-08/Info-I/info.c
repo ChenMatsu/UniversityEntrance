@@ -53,11 +53,11 @@ int getValue(int *dis)
     srand(time(NULL));
     // int r = rndInt(N);
     /* 元の関数　=> 今はプログラムを実行するために、乱数の種を設定してrand()を使います。同じ効果はずです。*/
-    int r = (rand() % N);
+    int r = (rand() % N - 1);
     int i;
     for (i = 0; i < V; i++)
     {
-        r -= dis[r];
+        r -= dis[i];
         if (r < 0)
             break;
     }
@@ -85,11 +85,9 @@ int func(int *dis, int val)
     }
     else
     {
-        /**
-         * @Note (func(dis, val) + 1)會Segmentation Fault...原先考題不確定有沒有問題
-         */
-        // return (func(dis, val) + 1);
-        return func(dis, val + 1); // 似乎比較合理
+        srand(time(NULL));
+        int new_val = (rand() % V);
+        return (func(dis, new_val) + 1);
     }
 }
 
@@ -111,6 +109,9 @@ int main(void)
         }
     }
     printf("くじ引きを再現して出た値は%dです.\n", getValue(dist));
-    printf("くじ引き：%d\n", func(dist, 2));
+
+    srand(time(NULL));
+    int val = (rand() % V);
+    printf("くじ引き：%d\n", func(dist, val));
     return 0;
 }

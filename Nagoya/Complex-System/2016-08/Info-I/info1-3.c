@@ -13,7 +13,7 @@
 
 /**
  * @Note 本質上是Divide and Conquer演算法的實作
-*/
+ */
 int func2(int a[], int n)
 {
     int v1, v2;

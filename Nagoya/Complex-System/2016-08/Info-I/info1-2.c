@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * 名古屋大学　大学院情報学研究科　2017年度博士前期課程入試問題　情1−2~4
@@ -29,8 +31,8 @@
  *
  * ステップ１：aのbによる剰余rを計算する
  * ステップ２：rが0であれば、bを最大公約数として返して出力してプログラムを終了する
- * ステップ３：aへ(b * (a/b))を代入する
- * ステップ４：bへ(a - b * (a/b))を代入する
+ * ステップ３：aへbを代入する
+ * ステップ４：bへrを代入する
  * ステップ５：ステップ1へ戻る
  */
 
@@ -39,29 +41,18 @@
  */
 int func1(int a, int b)
 {
-    if (a % b == 0)
+    int r = a % b;
+    printf("%d %d\n", a, b);
+    if (r == 0)
     {
         return b;
     }
     else
     {
-        return func1(b * (a / b), a - b * (a / b));
+
+        return func1(b, r);
     }
 }
-
-/**
- * ３）
- * a = 360, b = 25
- *
- * func1(360, 25)
- *      a = 25 * (360 / 25), b = 360 - 25 * (360 / 25) = 10
- *      count = 1
- * func1(350, 10)
- *      a = 10 * (350 / 10), b = 350 - 10 * (350 / 10) = 0
- *      count = 2
- *      break;
- *
- */
 
 /**
  * @Note Testing
@@ -69,5 +60,11 @@ int func1(int a, int b)
 int main()
 {
     printf("%d\n", func1(360, 25));
+
+    srand(time(NULL));
+    int rnd1 = (rand() % 1000);
+    int rnd2 = (rand() % (rand() % 100) + 1);
+
+    printf("%d\n", func1(rnd1, rnd2));
     return 0;
 }
