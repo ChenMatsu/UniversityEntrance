@@ -50,7 +50,7 @@ void pascal(int n)
 
         for (k = 0; k <= i; k++)
         {
-            printf("%2d", comb(i, k));
+            printf("%2d", comb(n, k));
         }
         printf("\n");
     }

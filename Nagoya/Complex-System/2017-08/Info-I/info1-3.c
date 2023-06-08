@@ -25,18 +25,30 @@ int get_min(int data[])
     return min;
 }
 
+// int get_order(int data[], int n)
+// {
+//     int count = 1;
+//     int *p = data;
+//     int num = data[n];
+//     while (*p != -1)
+//     {
+//         if (*p < num)
+//         {
+//             count++;
+//         }
+//         p++;
+//     }
+//     return count;
+// }
+
 int get_order(int data[], int n)
 {
     int count = 1;
     int *p = data;
-    int num = data[n];
     while (*p != -1)
     {
-        if (*p < num)
-        {
+        if (*(++p) > data[n])
             count++;
-        }
-        p++;
     }
     return count;
 }
