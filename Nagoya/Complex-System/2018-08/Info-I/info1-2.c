@@ -26,16 +26,16 @@ int fib(int k) /* n = 5 => 15 [2F(n) - 1] times*/
 int fib2(int a1, int a2, int k) /* n = 5 =>  6 times (n + 1 times)*/
 {
     fib_count_two++;
-    if (k == n)
+    if (k == 0)
         return a1;
     else
-        return fib2(a2, a1 + a2, k + 1);
+        return fib2(a1 + a2, a1, k - 1);
 }
 
 int main()
 {
     scanf("%d", &n);
     printf("%d %d in %d total call\n", n, fib(n), fib_count_one);
-    printf("%d %d in %d total call\n", n, fib2(0, 1, 0), fib_count_two);
+    printf("%d %d in %d total call\n", n, fib2(0, 1, n), fib_count_two);
     return 0;
 }
