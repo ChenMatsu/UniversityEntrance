@@ -13,13 +13,16 @@
 int str_len(char s[]) /*文字列の長さを計算する*/
 {
     int len;
-    for (len = 0; *s != '\0'; s++, len++);
+    // for (len = 0; *s != '\0'; s++, len++);
+    for (len = 0; s[len] != '\0'; len++)
+        ;
     return len;
 }
 
 void reverse_str(char s[]) /*文字列の左右を反転する*/
 {
     int i, len = str_len(s);
+    printf("%d\n", len);
     char temp;
     for (i = 0; i < len / 2; i++)
     {
