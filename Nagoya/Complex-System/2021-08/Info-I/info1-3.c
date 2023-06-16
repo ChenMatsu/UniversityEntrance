@@ -18,7 +18,8 @@ double f(double a[], double b[], int n)
     }
     else
     {
-        return (a[n - 1] * b[n - 1]);
+        // return (a[n - 1] * b[n - 1]);
+        return a[0] * b[0];
     }
 }
 
