@@ -6,3 +6,6 @@
 - [数学の美しい物語](https://manabitimes.jp/math)
 - [おぐえもんさん](https://oguemon.com/topic/study/linear-algebra/)
 - [ばたばら](https://batapara.com)
+- [コントロラポ](https://controlabo.com)
+
+**<注意>ここの記録は学習用だけです**
