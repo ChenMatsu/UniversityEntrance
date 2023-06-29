@@ -1,4 +1,5 @@
 ### Curvature
+> How points curve in the plane
 
 $$
     \kappa = |\dfrac{d\vec T}{ds}| = |\dfrac{d\vec T}{dt}\dfrac{dt}{ds}| = \dfrac{1}{|\vec v|}|\dfrac{d\vec T}{dt}| \\
