@@ -58,3 +58,15 @@ $$
         f'(x) = e^x
     \end{align*}
 $$
+
+**Example6**
+
+$$
+    \begin{align*}
+        y = x^{\sin(x)} \\
+        ln(y) = ln(x^{\sin(x)}) \\
+        \dfrac{d}{dx}ln(y) = \dfrac{d}{dx}ln(x^{\sin(x)}) \\
+        \dfrac{1}{y}\dfrac{d}{dx} = \dfrac{d}{dx}(\sin(x)ln(x)) \\
+        \dfrac{dy}{dx} = x^{\sin(x)}[\cos(x)ln(x) + \sin(x)\dfrac{1}{x}]
+    \end{align*}
+$$
