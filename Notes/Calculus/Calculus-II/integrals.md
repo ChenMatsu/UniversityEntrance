@@ -24,3 +24,13 @@ $$
 $$
     \int{\dfrac{\sqrt{25x^2-4}}{x}}dx = \sqrt{25x^2-4} - 2\sec^{-1}(\dfrac{5x}{2}) + C, \quad x = \dfrac{2}{5}\sec(\theta) 
 $$
+
+**Example5**
+$$
+    \begin{align*}
+        \int{\dfrac{x^2\ln(x)}{(1+x^3)^2}}dx & = \dfrac{1}{9}\int{\dfrac{\ln(u)}{(1+u)^2}}du, \quad u = x^3, du = 3x^2dx, x = u^{1/3} \\\
+        & = \dfrac{1}{9}[-\ln(u)(1+u)^{-1} + \int{\dfrac{1}{u(1+u)}du}], \quad v = \ln(u), du = \dfrac{1}{u}du, dw = \dfrac{du}{(1+u)^2}, w = -\dfrac{1}{(1+u)} \\\
+        & = \dfrac{1}{9}[\ln(u) - \ln(1+u) - \ln(u)(1+u)^{-1}] + C \\\
+        & = \dfrac{1}{9}[\ln(x^3) - \ln(1+x^3) - \ln(x^3)(1+x^3)^{-1}] + C
+     \end{align*}
+$$
