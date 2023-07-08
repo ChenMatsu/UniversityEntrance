@@ -38,7 +38,7 @@ $$
 
 ### Root Test
 
-> 1. $\lim_{n\to ∞}a_n^{1/n} = L < 1 \to$ is absolutely convergent
+> 1. $\lim_{n\to ∞}a_n^{1/n} = L < 1 \to$ is absolutely convergent  
 > 2. $\lim_{n\to ∞}a_n^{1/n} = L > 1 \to$ is divergent
 > 3. $\lim_{n\to ∞}a_n^{1/n} = L = 1 \to$ Inconslusive
 
