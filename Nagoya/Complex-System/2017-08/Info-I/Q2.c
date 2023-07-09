@@ -23,7 +23,8 @@ int comb(int n, int k)
     while (k != 0)
     {
         num *= n;
-        den *= k, n--, k--;
+        den *= k;
+        n--, k--;
     }
     return num / den;
 }
@@ -43,21 +44,21 @@ void pascal(int n)
     int i, j, k;
     for (i = 0; i < n; i++)
     {
-        for (j = 0; j < n - i + 1; j++)
+        for (j = 0; j < n - i - 1; j++)
         {
             printf(" ");
         }
 
         for (k = 0; k <= i; k++)
         {
-            printf("%2d", comb(n, k));
+            printf("%2d", comb(i, k));
         }
         printf("\n");
     }
 }
 
 /**
- * ３）
+ * ３） 
  */
 int comb2(int n, int k)
 {
