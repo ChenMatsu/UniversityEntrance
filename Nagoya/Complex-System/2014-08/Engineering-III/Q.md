@@ -36,8 +36,9 @@ $$
 
 $$
   \begin{align*}
-    \zeta & = \dfrac{K+1}{\sqrt{8K}}, \space \zeta' = \dfrac{(K+1)'\cdot\sqrt{8K} - (K+1)\sqrt{8K}'}{\sqrt{8K}^2}
-    \\ & = \dfrac{8K - (K+1)}{2(8K)^{3/2}} = 0, \quad  K = \dfrac{1}{15}
+    \zeta & = \dfrac{K+1}{\sqrt{8K}}, \\\ 
+    \space \zeta' & = \dfrac{(K+1)'\cdot\sqrt{8K} - (K+1)\sqrt{8K}'}{\sqrt{8K}^2} = \dfrac{8K - (K+1)}{2(8K)^{3/2}} = 0 \\\
+    K & = \dfrac{1}{15}
   \end{align*}
 $$
 
