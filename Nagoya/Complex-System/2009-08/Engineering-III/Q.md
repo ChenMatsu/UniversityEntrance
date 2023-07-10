@@ -24,9 +24,6 @@ $$
 
 $K = 2$ および $C = 1$ とするとき, この制御系のゲイン余裕を求めよ。
 
-
-
-
 <p align="center">
     <img src="https://gcdnb.pbrd.co/images/z5QpJXHSFriI.png?o=1"/>
 </p>
