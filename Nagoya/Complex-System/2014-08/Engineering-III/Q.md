@@ -35,7 +35,10 @@ $$
 \[5] ステップ応答が振動的である場合に, 減衰係数が最も小さくなる $K$ の値を求めよ。
 
 $$
-    
+  \begin{align*}
+    \zeta & = \dfrac{K+1}{\sqrt{8K}}, \space \zeta' = \dfrac{(K+1)'\cdot\sqrt{8K} - (K+1)\sqrt{8K}'}{\sqrt{8K}^2}
+    \\ & = \dfrac{8K - (K+1)}{2(8K)^{3/2}} = 0, \quad  K = \dfrac{1}{15}
+  \end{align*}
 $$
 
 \[6] 入力 $r(t) = 10\sin(2t)$ が与えられるとき, 定常状態における出力 $y(t)$ を求めよ。ただし, $K = 1$ とする。
