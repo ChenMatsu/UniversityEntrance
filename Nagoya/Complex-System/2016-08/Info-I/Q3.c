@@ -23,6 +23,16 @@ int func2(int a[], int n)
     }
     else
     {
+        /**
+         * n = 6, v1 = func(a, 5) => func(a, 4) => func(a, 3) =>  func(a, 2) =>  func(a, 1) = a[0] === 1
+         * 
+         * func(a, 1), v1 = 1, v2 = 1 === 1
+         * func(a, 2), v1 = 1, v2 = 3 ==> v1 = 3, 
+         * func(a, 3), v1 = 3, v2 = 654 => v1 = 654, 
+         * func(a ,4), v1 = 654, v2 = 8 => v1 = 654,
+         * func(a, 5), v1 = 654, v2 = 66 => v1 = 654, 
+         * func(a, 6), v1 = 654, v2 = 299 => v1 = 654
+        */
         v1 = func2(a, n - 1);
         v2 = a[n - 1];
         if (v1 > v2)

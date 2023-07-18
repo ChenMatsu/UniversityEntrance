@@ -41,7 +41,7 @@
  */
 int func1(int a, int b)
 {
-    int r = a % b;
+    int r = a % b; 
     printf("%d %d\n", a, b);
     if (r == 0)
     {
@@ -49,8 +49,7 @@ int func1(int a, int b)
     }
     else
     {
-
-        return func1(b, r);
+        return func1(b, r); 
     }
 }
 
@@ -59,12 +58,19 @@ int func1(int a, int b)
  */
 int main()
 {
-    printf("%d\n", func1(360, 25));
+    printf("%d\n", func1(360, 25)); 
+    /**
+     * 360 25 
+     * 25 10
+     * 10 5
+     * 5
+     * 
+    */
 
     srand(time(NULL));
     int rnd1 = (rand() % 1000);
     int rnd2 = (rand() % (rand() % 100) + 1);
 
-    printf("%d\n", func1(rnd1, rnd2));
+    // printf("%d\n", func1(rnd1, rnd2));
     return 0;
 }
