@@ -34,7 +34,7 @@ void calcDist(int *dat, int *dis)
     }
     for (int i = 0; i < N; i++)
     {
-        dis[dat[i]] += 1;
+        dis[dat[i]] += 1; 
     }
 }
 
@@ -54,6 +54,7 @@ int getValue(int *dis)
     // int r = rndInt(N);
     /* 元の関数　=> 今はプログラムを実行するために、乱数の種を設定してrand()を使います。同じ効果はずです。*/
     int r = (rand() % N - 1);
+    printf("%d\n", r);
     int i;
     for (i = 0; i < V; i++)
     {
@@ -61,7 +62,7 @@ int getValue(int *dis)
         if (r < 0)
             break;
     }
-    return dis[i];
+    return i;
 }
 
 /**
@@ -112,6 +113,6 @@ int main(void)
 
     srand(time(NULL));
     int val = (rand() % V);
-    printf("くじ引き：%d\n", func(dist, val));
+    // printf("くじ引き：%d\n", func(dist, val));
     return 0;
 }

@@ -71,6 +71,6 @@ int main()
     int rnd1 = (rand() % 1000);
     int rnd2 = (rand() % (rand() % 100) + 1);
 
-    // printf("%d\n", func1(rnd1, rnd2));
+    printf("%d\n", func1(rnd1, rnd2));
     return 0;
 }

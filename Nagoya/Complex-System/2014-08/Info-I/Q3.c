@@ -23,7 +23,7 @@ int func2(int x, int a[], int n)
     {
         if (x < a[n - 1])
         {
-            return (func2(x, a, n - 1) + a[n - 1]);
+            return (func2(x, a, n - 1) + a[n - 1]); 
         }
         else
         {

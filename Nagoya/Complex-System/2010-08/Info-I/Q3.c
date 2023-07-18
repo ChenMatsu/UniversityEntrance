@@ -11,8 +11,16 @@
  * 　　なければNGを返す。ただし、最初に関数checkが呼ばれるときには、mに２を
  *  　与えなければならない。下線部に入れるべき式、または式の一部を答えよ。
  */
-char *check(int n, int m)
+char *check(int n, int m) 
 {
+    /**
+     * 13 , 2
+     * 13, 3
+     * 13, 4
+     * 13, 5
+     * 13, 6,
+     * 13, 7 => "OK"
+    */
     if (m > n / 2)
     {
         return "OK";
@@ -49,8 +57,8 @@ int main(void)
     int n;
     FILE *fptr;
 
-    fptr = fopen("result", "w");
-    scanf("%d", &n);
+    fptr = fopen("result", "w"); // open file routine
+    scanf("%d", &n); 
 
     fprintf(fptr, "%s", check(n, 2));
 

@@ -15,9 +15,9 @@ int main(void)
      * @Note 給定題目執行會出現無排序問題 意味著會因不同編譯器而有所差異 因此此處分開寫原則上具備與題目一樣概念
      */
     // printf(" %x\n %x\n, %x\n", a++, ++a, a--); // 0x468a 0x468c 0x468c
-    printf(" %x\n", a++);
+    printf(" %x\n", a++); 
     printf(" %x\n", ++a);
-    printf(" %x\n", a--);
+    printf(" %x\n", a--); 
     printf(" %c\n %s\n", b[3], &b[2]); // s and rstu
     return 0;
 }

@@ -14,7 +14,7 @@ double f(double a[], double b[], int n)
 {
     if (n > 1)
     {
-        return (a[n - 1] * b[n - 1] + f(a, b, n - 1));
+        return (a[n - 1] * b[n - 1] + f(a, b, n - 1)); 
     }
     else
     {

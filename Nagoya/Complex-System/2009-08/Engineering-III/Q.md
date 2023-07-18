@@ -37,7 +37,15 @@ $$
 \[4] 入力を $x = \sin{ωt}$ とするとき, 出力 $y(t)$ を求めよ。
 
 $$
-
+    \begin{align*}
+    y(t) & = \mathscr{L^{-1}}[\dfrac{K}{Cs+K} \cdot \dfrac{ω}{s^2 + ω^2}] \\\
+    & = \dfrac{K}{C} \mathscr{L^{-1}}[\dfrac{1}{s+K/C} \cdot \dfrac{ω}{s^2 + ω^2}] \\\
+    & = \dfrac{K}{C}\int_0^te^{-K(t- u)/C}\sin(ωu)du \\\
+    & = \dfrac{K}{C}\int_0^te^{-K(t- u)/C}\sin(ωu)du \\\
+    & = \dfrac{K}{C}e^{-Kt/C}\{_0^t[\dfrac{C}{K}e^{Ku/C}\sin(ωu)]_ - \dfrac{Cω}{K}\int_0^te^{Ku/C}\cos(ωu)du\} \\\
+    & = \dfrac{K}{C}e^{-Kt/C}\{\dfrac{C}{K}e^{Kt/C}\sin(ωt) - \dfrac{Cω}{K}\{_0^t[\dfrac{C}{K}e^{Ku/C}\cos(ωu)] + \dfrac{Cω}{K}\int_0^te^{Ku/C}\sin(ωu)du\}\} \\\
+    & = ...
+    \end{align*}
 $$
 
 \[5] 次式で表される要素 $P(s)$ を加えて, 図２示すようなフィードバック制御系を構成した。
@@ -54,6 +62,7 @@ $$
         G(jω)P(jω) & = \dfrac{3}{jω(jω + 1)(jω + 2)} = -3\dfrac{1}{3w^2 + j(ω^3 - 2ω)} \cdot \dfrac{3w^2 - j(ω^3 - 2ω)}{3w^2 - j(ω^3 - 2ω)} \\\
         & = -3\dfrac{3w^2 - j(ω^3 - 2ω)}{(3w^2)^2 + (ω^3 - 2ω)^2} \\\ 
         & ω^3 - 2ω = 0, \quad ω = \sqrt{2} \\\
+
         |G(jω)P(jω)| & =  \dfrac{3}{\sqrt{(3w^2)^2 + (ω^3 - 2ω)^2}}
     \end{align*}
 $$

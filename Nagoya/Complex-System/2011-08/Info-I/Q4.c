@@ -13,6 +13,7 @@ struct exm
     // char *name; // This should work!
 };
 
+
 /**
  * [5]問題[4]で定義した構造体を用いて、サイズnの配列memを定義した。memの
  * メンバーnameには氏名が,メンバーageには年齢が代入されている。ageの値が

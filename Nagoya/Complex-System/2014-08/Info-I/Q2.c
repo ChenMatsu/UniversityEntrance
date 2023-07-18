@@ -32,7 +32,7 @@ char *func1(int x)
     for (i = 2; i <= sqrt(x); i++)
     {
         count++;
-        if (x % i == 0)
+        if (x % i == 0) 
             return "素数でない";
     }
     return "素数である";
