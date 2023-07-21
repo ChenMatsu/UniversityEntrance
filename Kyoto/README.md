@@ -11,84 +11,102 @@
 **2022**
 
 1. Linear Algebra
-   - Q1 Ok
-   - Q2 Ok
+   - Q1 ✅✅✅✅✅
+   - Q2 ✅✅✅✅✅
 2. Calculus
-   - Q1 Ok
-   - Q2 
+   - Q1 ✅✅✅✅
+   - Q2 🔳🔳🔳🔳
 3. Control Theory
-   - Q1 
-   - Q2
+   - Q1 ✅🔳🔳✅
+   - Q2 🔳🔳🔳🔳
 4. Probability Statistics
-   - Q1 
-   - Q2
+   - Q1 ✅✅✅🔳🔳
+   - Q2 ✅✅✅🔳🔳
   
 ---
 
 **2021**
 
 1. Linear Algebra
-   - Q1 Ok
-   - Q2 Ok
+   - Q1 ✅✅✅✅
+   - Q2 ✅✅✅✅
 2. Calculus
-   - Q1 
-   - Q2 
+   - Q1 🔳🔳🔳🔳
+   - Q2 🔳🔳🔳🔳
 3. Control Theory
-   - Q1 Ok
-   - Q2 Ok
+   - Q1 ✅✅✅
+   - Q2 ✅✅🔳✅
 4. Probability Statistics
-   - Q1 
-   - Q2
+   - Q1 ✅✅🔳🔳
+   - Q2 🔳✅✅✅✅🔳
   
 ---
 
 **2020**
 
 1. Linear Algebra
-   - Q1 Ok
-   - Q2 Ok
+   - Q1 ✅✅✅
+   - Q2 ✅✅✅✅
 2. Calculus
-   - Q1 
-   - Q2 
+   - Q1 ✅✅✅🔳🔳
+   - Q2 ✅✅🔳🔳
 3. Control Theory
-   - Q1 
-   - Q2
+   - Q1 ✅🔳🔳
+   - Q2 ✅✅✅🔳
 4. Probability Statistics
-   - Q1 
-   - Q2
+   - Q1 ✅✅✅✅🔳
+   - Q2 ✅✅✅🔳🔳
   
 ---
 
 **2019**
 
 1. Linear Algebra
-   - Q1 Ok
-   - Q2 
+   - Q1 ✅✅✅✅
+   - Q2 ✅✅🔳🔳
 2. Calculus
-   - Q1 
-   - Q2 
+   - Q1 ✅✅✅🔳
+   - Q2 🔳🔳🔳🔳🔳🔳
 3. Control Theory
-   - Q1 Ok
-   - Q2 Ok
+   - Q1 ✅✅✅
+   - Q2 ✅✅
 4. Probability Statistics
-   - Q1 Ok
-   - Q2 Ok
+   - Q1 ✅
+   - Q2 ✅✅✅🔳✅✅✅
   
 ---
 
 **2018**
 
 1. Linear Algebra
-   - Q1 Ok
-   - Q2 Ok
+   - Q1 ✅✅✅
+   - Q2 ✅✅✅✅✅
 2. Calculus
-   - Q1 Ok
-   - Q2 Ok
+   - Q1 ✅✅✅
+   - Q2 ✅✅✅
 3. Control Theory
-   - Q1 Ok
-   - Q2 Ok
+   - Q1 ✅✅✅
+   - Q2 ✅✅✅
 4. Probability Statistics
-   - Q1 Ok
-   - Q2 Ok
+   - Q1 ✅✅✅✅
+   - Q2 ✅✅✅✅✅
 
 ---
+
+**2017**
+
+1. Linear Algebra
+   - Q1 ✅✅
+   - Q2 ✅✅✅
+2. Calculus
+   - Q1 ✅✅✅
+   - Q2 ✅✅✅
+3. Control Theory
+   - Q1 🔳🔳
+   - Q2 🔳🔳
+4. Probability Statistics
+   - Q1 🔳🔳
+   - Q2 🔳🔳
+
+---
+
