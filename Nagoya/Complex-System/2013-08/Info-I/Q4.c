@@ -28,7 +28,7 @@ char *scpy(char *s, char *t)
 int slen(char *s)
 {
     int n = 0;
-    while (*(s++) != '\0')
+    while (*(s++) != '\0') // s => char[5] = "abcde" => *s ==(Address)== s[0] => "a"  => *(s++) => s[1]
         n++;
     return n;
 }

@@ -22,9 +22,15 @@ int inprod(int a[], int b[], int i)
     if (i > 0)
     {
         return a[i - 1] * b[i - 1] + inprod(a, b, i - 1);
+        // => a[3 - 1] * b[3 - 1] + inprod(a, b, 3 - 1) ===  a[3 - 1] * b[3 - 1] + a[2 - 1] * b[2 - 1] + inprod(a, b, 2 - 1) === [3 - 1] * b[3 - 1] + a[2 - 1] * b[2 - 1] + a[1 - 1] * b[1 - 1];
     }
     else
     {
         return 0;
     }
 }
+
+// inprod(a, b, i) i = 3 => 3 * 1
+// inprod(a, b, i-1) i = 2 => 2 * 10
+// inprod(a, b, i-1) i = 1 => 1 * 100
+// inprod(a, b, i-1) i = 0 => 0

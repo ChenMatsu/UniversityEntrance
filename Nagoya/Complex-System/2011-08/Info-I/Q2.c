@@ -22,7 +22,7 @@ int fnc1(int a[], int n, int x)
         a[n] = 0;
     if (n > 0)
     {
-        return fnc1(a, n - 1, (rand() % 9) + 1);
+        return fnc1(a, n - 1, (rand() % 9) + 1); // 1 ~ 9
     }
     else
     {

@@ -51,7 +51,7 @@
 int main(void)
 {
     int a = 1234;
-    double b = 1.233;
+    double b = 1234.5678;
     printf("%5i--->%+14.7e\n", a, b);
     return 0;
 }

@@ -58,10 +58,9 @@ int main(void)
     FILE *fptr;
 
     fptr = fopen("result", "w"); // open file routine
-    scanf("%d", &n); 
+    scanf("%d", &n);
 
     fprintf(fptr, "%s", check(n, 2));
-
     fclose(fptr);
     return 0;
 }

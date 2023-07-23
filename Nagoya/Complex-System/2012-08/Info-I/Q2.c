@@ -56,13 +56,13 @@ int fnc1(int x, int n)
  */
 int main(void)
 {
-    printf("2進数 結果：%d\n", fnc1(3, 2));
-    printf("8進数 結果：%d\n", fnc1(3, 8));
+    printf("2進数 結果：%d\n", fnc1(3, 2)); // => 3
+    printf("8進数 結果：%d\n", fnc1(3, 8)); // => 3
 
     printf("-----\n");
 
-    printf("2進数 結果：%d\n", fnc1(11, 2));
-    printf("8進数 結果：%d\n", fnc1(11, 8));
+    printf("2進数 結果：%d\n", fnc1(11, 2)); // => 1011
+    printf("8進数 結果：%d\n", fnc1(11, 8)); // => 13 => 1*8^1 + 3*8^0
 
     printf("-----\n");
 
@@ -73,5 +73,9 @@ int main(void)
 
     printf("8進数 結果：%d\n", fnc1(107, 8));
     printf("8進数 結果：%d\n", fnc1(153, 8));
+
+    printf("-----\n");
+
+    printf("2進数 結果：%d\n", fnc1(21, 2)); // => 10101
     return 0;
 }
