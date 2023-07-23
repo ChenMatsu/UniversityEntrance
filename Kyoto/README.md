@@ -105,8 +105,24 @@
    - Q1 ✅✅🔳
    - Q2 ✅✅
 4. Probability Statistics
-   - Q1 🔳🔳
-   - Q2 🔳🔳
+   - Q1 ✅✅✅
+   - Q2 ✅✅🆘🆘
 
 ---
 
+**2016**
+
+1. Linear Algebra
+   - Q1 
+   - Q2 
+2. Calculus
+   - Q1 
+   - Q2 
+3. Control Theory
+   - Q1 
+   - Q2 
+4. Probability Statistics
+   - Q1 
+   - Q2 
+
+---
