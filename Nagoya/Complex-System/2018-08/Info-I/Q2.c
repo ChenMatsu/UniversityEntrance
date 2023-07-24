@@ -30,12 +30,23 @@ int fib2(int a1, int a2, int k) /* n = 5 =>  6 times (n + 1 times)*/
         return a1;
     else
         return fib2(a1 + a2, a1, k - 1);
+        // return fib2(a2, a1 + a2, k - 1);
 }
+
+/**
+ * fib(0, 1, 5) => fib(1, 0, 4) => fib(1, 1, 3) => fib(2, 1, 2) => fib(3, 2, 1) => fib(5, 3, 0)
+*/
 
 int main()
 {
+    // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
     scanf("%d", &n);
     printf("%d %d in %d total call\n", n, fib(n), fib_count_one);
     printf("%d %d in %d total call\n", n, fib2(0, 1, n), fib_count_two);
+    // printf("%d total call\n", fib2(0, 1, 0)); // a_0 = 0
+    // printf("%d total call\n", fib2(0, 1, 1)); // a_1 = 1
+    // printf("%d total call\n", fib2(0, 1, 2)); // a_2 = 1
+    // printf("%d total call\n", fib2(0, 1, 3)); // a_3 = 2
+    // printf("%d total call\n", fib2(0, 1, 5)); // a_3 = 5
     return 0;
 }

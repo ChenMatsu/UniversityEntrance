@@ -16,9 +16,10 @@
 int get_min(int data[])
 {
     int *p = data;
-    int min = *p; 
-    while (*(++p) != -1) 
+    int min = *p;
+    while (*(++p) != -1)
     {
+        printf("%d\n", *p);
         if (*p < min)
             min = *p;
     }
@@ -55,8 +56,8 @@ int get_order(int data[], int n)
 
 int main(void)
 {
-    int data[] = {50, 40, 80, 70, 30, 10, 90, 60, 80, -1}; => 0, 1, 2, 3
- 
+    int data[] = {50, 40, 80, 70, 30, 10, 90, 60, 80, -1};
+
     int n;
     scanf("%d", &n);
     printf("最小値は%dです\n", get_min(data));

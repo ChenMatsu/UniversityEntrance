@@ -22,10 +22,11 @@ int comb(int n, int k)
     int num = 1, den = 1; // denominator(den)
     while (k != 0)
     {
-        num *= n;
-        den *= k;
+        num *= n; // 5 * 4  
+        den *= k; // 2 * 1 => 5 * 4 /  2 * 1 = 10
         n--, k--;
     }
+    // nCk = n!/(n-k)!k! = (n-1)(n-2)...(n-k+1)/(k)(k-1)...(1)
     return num / den;
 }
 

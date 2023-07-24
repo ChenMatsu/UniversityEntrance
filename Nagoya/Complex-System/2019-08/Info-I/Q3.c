@@ -16,6 +16,7 @@ int str_len(char s[]) /*文字列の長さを計算する*/
     // for (len = 0; *s != '\0'; s++, len++);
     for (len = 0; s[len] != '\0'; len++)
         ;
+    // for (len = 0; *(s++) != '\0'; len++)
     return len;
 }
 

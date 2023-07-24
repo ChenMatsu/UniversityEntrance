@@ -42,7 +42,6 @@
 int func1(int a, int b)
 {
     int r = a % b; 
-    printf("%d %d\n", a, b);
     if (r == 0)
     {
         return b;
