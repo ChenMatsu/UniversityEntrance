@@ -136,7 +136,7 @@
 
 1. Linear Algebra (Math I)
    - Q1 ✅✅✅✅
-   - Q2 ✅❓
+   - Q2 ✅✅
 2. C Program (Information I)
    - Q1 ✅
    - Q2 ✅✅✅
@@ -144,4 +144,18 @@
 3. Control Theory (Engineering III)
    - Q1 ✅✅✅✅✅
    - Q2 ✅✅
+---
+
+**2018**
+
+1. Linear Algebra (Math I)
+   - Q1 ✅✅✅✅
+   - Q2 ✅✅✅✅
+2. C Program (Information I)
+   - Q1 ✅
+   - Q2 ✅✅✅
+   - Q3 ✅
+3. Control Theory (Engineering III)
+   - Q1 ✅✅✅✅
+   - Q2 
 ---
