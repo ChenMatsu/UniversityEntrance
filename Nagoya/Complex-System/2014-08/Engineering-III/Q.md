@@ -23,7 +23,23 @@ $$
 \[3] $K$ の値を $0$ から ∞ まで連続的に変化させたときに, 系の特性方程式の根が複素平面上に描く軌跡を根軌跡という。実軸上の部分を除く根軌跡が円であることを証明せよ。また, 円の中心座標と半径を数値で示せ。
 
 $$
-    
+    \begin{align*}
+        & 1 + L(s) = s^2 + (K+1)s + 2K = 0 \\\
+        & n = 2, m = 1
+    \end{align*}
+$$
+
+$$
+    \begin{align*}
+        & θ = \dfrac{Nπ}{n - m} = \dfrac{Nπ}{2-1} = Nπ, \quad N = \pm1, \pm3,... \\\
+        & \therefore \text{the root locus is a circle.}
+    \end{align*}
+$$
+
+$$
+    \begin{align*}
+        & \text{A system with only two poles and only one zero, the center is in the zero O(-2,0)}
+    \end{align*}
 $$
 
 \[4] 根軌跡（実軸上の部分を含む）を描け。なお, 図中に $K = 1$ としたときの一巡伝達関数の極をｘ印, 零点を〇印で示すとともに, それらの座標値を示せ。
