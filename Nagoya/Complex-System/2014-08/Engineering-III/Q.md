@@ -29,16 +29,15 @@ $$
 \[4] 根軌跡（実軸上の部分を含む）を描け。なお, 図中に $K = 1$ としたときの一巡伝達関数の極をｘ印, 零点を〇印で示すとともに, それらの座標値を示せ。
 
 $$
-
+    
 $$  
 
 \[5] ステップ応答が振動的である場合に, 減衰係数が最も小さくなる $K$ の値を求めよ。
 
 $$
   \begin{align*}
-    \zeta & = \dfrac{K+1}{\sqrt{8K}}, \\\ 
-    \space \zeta' & = \dfrac{(K+1)'\cdot\sqrt{8K} - (K+1)\sqrt{8K}'}{\sqrt{8K}^2} = \dfrac{8K - (K+1)}{2(8K)^{3/2}} = 0 \\\
-    K & = \dfrac{1}{15}
+    & ω_n = \sqrt{2}, \quad ζ = \dfrac{K+1}{\sqrt{8K}} \\
+    \dfrac{dζ}{dK} & = \dfrac{(K+1)'(\sqrt{8K}) - (K+1)(\sqrt{8K})'}{(\sqrt{8K})^2} = \dfrac{1(\sqrt{8K}) - (K+1)(\dfrac{8}{2\sqrt{8K}})}{8K} \\ & = \dfrac{8K - 4(K+1)}{(8K)^{3/2}} = \dfrac{4(K-1)}{(8K)^{3/2}} = 0, \quad K = 1
   \end{align*}
 $$
 
