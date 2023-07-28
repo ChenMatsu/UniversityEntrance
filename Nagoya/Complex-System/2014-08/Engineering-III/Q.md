@@ -70,7 +70,7 @@ $$
    \begin{align*}
         & G(jω) = \dfrac{jω + 2}{2-ω^2+2jω} \\
         & G(jω)_{ω=2} = \dfrac{2j + 2}{4j - 2} \\
-        & 10|G(jω)|_{ω=2} = 10\dfrac{|2j+2|}{|4j-2|} = 10\dfrac{\sqrt{8}}{\sqrt{20}} = 2\sqrt{10} = y(t)
+        & 10|G(jω)|\_{ω=2} = 10\dfrac{|2j+2|}{|4j-2|} = 10\dfrac{\sqrt{8}}{\sqrt{20}} = 2\sqrt{10} = y(t)
    \end{align*}
 $$
 
